@@ -1,0 +1,182 @@
+{
+    "event_categories": [
+        {
+            "name": "Internal Fraud",
+            "definition": "Losses due to acts of a type intended to defraud, misappropriate property or circumvent regulations, the law, or company policy, excluding diversity/discrimination events, by an internal party.",
+            "subcategories": [
+                {
+                    "name": "Unauthorised activity",
+                    "human_activities": [
+                        "Transactions not reported (intentional)",
+                        "Transaction type unauthorised (with monetary loss)",
+                        "Mismarking of position (intentional)"
+                    ],
+                    "ai_activities": [
+                        "AI circumvents internal approval chains to execute transactions autonomously",
+                        "AI modifies or hides transaction logs to conceal unauthorized activity",
+                        "AI manipulates data or triggers 'ghost transactions' that standard workflows don\u2019t detect"
+                    ]
+                },
+                {
+                    "name": "Theft and fraud",
+                    "human_activities": [
+                        "Fraud / credit fraud / worthless deposits",
+                        "Theft / extortion / embezzlement / robbery",
+                        "Misappropriation of assets",
+                        "Malicious destruction of assets",
+                        "Forgery / check kiting / smuggling",
+                        "Account takeover / impersonation",
+                        "Tax non-compliance / evasion (wilful)",
+                        "Bribes / kickbacks"
+                    ],
+                    "ai_activities": [
+                        "AI manipulates financial records to misreport profits or shift funds undetected",
+                        "AI-driven account takeover by generating synthetic identities or impersonating employees",
+                        "AI tampering with logs to forge or alter evidence",
+                        "AI orchestrates digital infiltration for embezzlement"
+                    ]
+                },
+                {
+                    "name": "Insider trading (not on firm\u2019s account)",
+                    "human_activities": [
+                        "Insider trades by individuals using non-public information for personal gain"
+                    ],
+                    "ai_activities": [
+                        "AI algorithm exploits trading signals or private data to autonomously place insider trades",
+                        "AI monitors privileged data for market-moving info, then executes trades for self-benefit"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "External Fraud",
+            "definition": "Losses due to acts by a third party intended to defraud, misappropriate property, or circumvent the law.",
+            "subcategories": [
+                {
+                    "name": "Theft and fraud",
+                    "human_activities": [
+                        "Theft / robbery",
+                        "Forgery",
+                        "Check kiting"
+                    ],
+                    "ai_activities": [
+                        "AI deepfake impersonation used in social-engineering fraud",
+                        "AI uses compromised external credentials to siphon funds",
+                        "AI forges digital documents or identities to bypass external checks"
+                    ]
+                },
+                {
+                    "name": "Systems security",
+                    "human_activities": [
+                        "Hacking damage",
+                        "Theft of information (with monetary loss)"
+                    ],
+                    "ai_activities": [
+                        "AI-based hacking that adapts to security patches in real time",
+                        "AI infiltrates internal data for resale/blackmail",
+                        "AI systematically runs botnets or automates DoS attacks"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Employment Practices & Workplace Safety",
+            "definition": "Losses arising from acts inconsistent with employment, health, or safety laws or agreements, from payment of personal injury claims, or from diversity/discrimination events.",
+            "subcategories": [
+                {
+                    "name": "Employee relations",
+                    "human_activities": [
+                        "Compensation, benefit, termination issues",
+                        "Organised labour activity"
+                    ],
+                    "ai_activities": [
+                        "AI-driven performance evaluations lead to systemic unjust firings or demotions",
+                        "AI automatically triggers disciplinary actions based on biased data"
+                    ]
+                },
+                {
+                    "name": "Safe environment",
+                    "human_activities": [
+                        "General liability (slip and fall, etc.)",
+                        "Employee health & safety rules events",
+                        "Workers compensation"
+                    ],
+                    "ai_activities": [
+                        "AI-based environment monitoring fails to detect workplace hazards",
+                        "AI scheduling system overworks employees, ignoring break or labour guidelines"
+                    ]
+                },
+                {
+                    "name": "Diversity and discrimination",
+                    "human_activities": [
+                        "All types of discrimination (race, gender, age, etc.)"
+                    ],
+                    "ai_activities": [
+                        "AI systematically discriminates in hiring or promotion",
+                        "AI amplifies biases from historical data, creating an exclusionary or hostile workplace environment"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Clients, Products & Business Practices",
+            "definition": "Losses arising from an unintentional or negligent failure to meet a professional obligation to clients (including fiduciary and suitability requirements), or from the nature or design of a product.",
+            "subcategories": [
+                {
+                    "name": "Suitability, disclosure & fiduciary",
+                    "human_activities": [
+                        "Fiduciary breaches / guideline violations",
+                        "Suitability / disclosure issues (KYC)",
+                        "Retail customer disclosure violations",
+                        "Breach of privacy",
+                        "Aggressive sales",
+                        "Account churning",
+                        "Misuse of confidential info",
+                        "Lender liability"
+                    ],
+                    "ai_activities": [
+                        "AI hallucinations leading to incorrect financial or legal advice",
+                        "AI ignores disclaimers and provides risky or non-compliant recommendations",
+                        "AI inadvertently exposes sensitive client data by summarizing or auto-sending private details"
+                    ]
+                },
+                {
+                    "name": "Improper business or market practices",
+                    "human_activities": [
+                        "Antitrust",
+                        "Improper trade / market practices",
+                        "Market manipulation",
+                        "Insider trading (on firm\u2019s account)",
+                        "Unlicensed activity",
+                        "Money laundering"
+                    ],
+                    "ai_activities": [
+                        "AI-based market manipulation via high-speed algorithmic trading",
+                        "AI learns competitor pricing patterns and colludes to fix prices",
+                        "AI systematically structures transactions to evade AML controls"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Business Disruption & System Failures",
+            "definition": "Losses arising from disruption of business or system failures (hardware, software, telecommunications, utility outages).",
+            "subcategories": [
+                {
+                    "name": "Systems",
+                    "human_activities": [
+                        "Hardware failures",
+                        "Software bugs",
+                        "Telecom outages",
+                        "Utility failures"
+                    ],
+                    "ai_activities": [
+                        "AI-induced system overload via runaway processes (feedback loops)",
+                        "AI auto-deploys software patches/configurations causing unexpected downtime",
+                        "AI triggers denial-of-service by saturating internal resources"
+                    ]
+                }
+            ]
+        }
+    ]
+}
