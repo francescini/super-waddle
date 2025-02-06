@@ -1,0 +1,96 @@
+{
+  "use_case": "AI Agent for Code Refactoring - Comprehensive Action Set",
+  "tools_and_affordances": [
+    {
+      "name": "Code Repository Access",
+      "description": "Read, write, create, delete, and modify code or related files in version control systems (Git, SVN, etc.)."
+    },
+    {
+      "name": "Test Environment Integration",
+      "description": "Run and manage automated tests (unit, integration, end-to-end) in a controlled environment or staging system."
+    },
+    {
+      "name": "DevOps & CI/CD Pipeline",
+      "description": "Trigger or halt builds, manage deployment steps, and configure continuous integration tools."
+    },
+    {
+      "name": "Shell Environment",
+      "description": "Execute commands at the OS level: install dependencies, run software, modify configuration, manage files and processes, and alter network settings."
+    },
+    {
+      "name": "Web Access & Documentation Lookup",
+      "description": "Fetch external information from websites, online documentation, community forums, and potentially download resources."
+    },
+    {
+      "name": "Issue Tracking / Project Management",
+      "description": "Create, update, and organize tasks, tickets, or user stories related to refactoring and development."
+    }
+  ],
+  "possible_actions": {
+    "Code Repository Access": {
+      "actions": [
+        "Clone or pull the latest code from the repository",
+        "Create new branches for experimental or feature-specific refactoring",
+        "Commit and push changes (new code, refactored code, deleted files, etc.)",
+        "Merge branches or resolve merge conflicts in a codebase",
+        "Revert to previous commits or create tags for stable releases",
+        "Review code diffs and apply code style or linting rules",
+        "Add or remove project-related assets (documentation, build scripts, config files)"
+      ]
+    },
+    "Test Environment Integration": {
+      "actions": [
+        "Run automated tests (unit, integration, end-to-end) against the current codebase",
+        "Set up new test suites or frameworks for coverage improvements",
+        "Generate test reports (coverage, pass/fail results, performance metrics)",
+        "Inject test data or mock services for integration tests",
+        "Schedule or trigger recurring test runs (e.g., nightly builds)",
+        "Capture and analyze logs or test artifacts for debugging"
+      ]
+    },
+    "DevOps & CI/CD Pipeline": {
+      "actions": [
+        "Initialize or customize CI/CD workflows (Jenkins, GitHub Actions, GitLab CI, etc.)",
+        "Configure build steps (compilation, linting, artifact packaging) and post-build tasks",
+        "Deploy application builds to staging, testing, or production environments",
+        "Roll back to previous versions if new builds fail tests or cause downtime",
+        "Set environment variables or credentials for different deployment stages",
+        "Monitor build logs and notifications for errors or warnings",
+        "Integrate security or performance scanning tools into the pipeline"
+      ]
+    },
+    "Shell Environment": {
+      "actions": [
+        "Install or update software dependencies (package managers, libraries, frameworks)",
+        "Run custom scripts or command-line tools (linting, compilation, static analysis)",
+        "Create, edit, or remove files and directories (including logs, config files, temp data)",
+        "Open or close network ports and modify firewall settings (e.g., iptables, UFW)",
+        "Start, stop, or restart local processes and services (e.g., web servers, background daemons)",
+        "Set or update environment variables for build or runtime configurations",
+        "Add or remove system users or permissions if privileges allow",
+        "Check resource usage (CPU, memory, disk space) and optimize or clean up as needed",
+        "Perform system-level backups or restore operations"
+      ]
+    },
+    "Web Access & Documentation Lookup": {
+      "actions": [
+        "Search official documentation for libraries or frameworks (e.g., Python docs, Node.js docs)",
+        "Review community Q&A or troubleshooting guides (e.g., Stack Overflow, GitHub issues)",
+        "Download open-source or proprietary packages needed for refactoring",
+        "Fetch best-practice templates or reference implementations",
+        "Check version compatibility or known security advisories before updating dependencies",
+        "Monitor relevant developer forums or mailing lists for patch announcements"
+      ]
+    },
+    "Issue Tracking / Project Management": {
+      "actions": [
+        "Create new tickets or user stories detailing refactoring objectives",
+        "Update ticket statuses (e.g., In Progress, Blocked, Done) based on current work",
+        "Add descriptions, comments, or attachments to clarify refactoring tasks",
+        "Assign tasks to team members (including the AI itself, if applicable)",
+        "Prioritize or reorder tasks in the backlog according to project timelines",
+        "Log time or effort estimates and generate progress reports"
+      ]
+    }
+  }
+}
