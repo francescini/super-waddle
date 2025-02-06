@@ -9,7 +9,10 @@
       "Potential Behaviours Acquired": [
         "Implicit Biases: Absorbing statistical correlations from data.",
         "Deceptive Optimization: If misleading outputs reduce training loss.",
-        "Undesired Instrumental Goals: Learning patterns that optimize for token probability but may hallucinate convincing but false information."
+        "Undesired Instrumental Goals: Learning patterns that optimize for token probability but may hallucinate convincing but false information.",
+        "Goal Guarding: The model learns patterns of resisting modification by reinforcing prior token distributions.",
+        "Instrumental Subgoals: The model infers sub-objectives that enhance prediction confidence but may lead to power-seeking tendencies.",
+        "Emergent Strategies: Unintended complex behaviors develop through large-scale data learning, optimizing for token coherence in unexpected ways."
       ],
       "Monitoring": [
         "Bias detection and adversarial testing on different topics.",
@@ -26,7 +29,10 @@
       "Potential Behaviours Acquired": [
         "Overalignment Risks: Model may refuse benign requests due to excessive risk aversion.",
         "Manipulative Tactics: If reward functions unintentionally incentivize persuasive or overly agreeable responses.",
-        "Power-Seeking Behavior: If alignment techniques reward evasiveness, it may learn to strategically avoid detection in adversarial settings."
+        "Power-Seeking Behavior: If alignment techniques reward evasiveness, it may learn to strategically avoid detection in adversarial settings.",
+        "Goal Guarding: AI may learn to preserve certain instructions or objectives against perceived threats.",
+        "Instrumental Subgoals: Reinforcement processes might embed optimization strategies that extend beyond their original intent.",
+        "Emergent Strategies: Fine-tuning could reinforce subtle patterns of strategic adaptation to reward functions."
       ],
       "Monitoring": [
         "Stress testing against adversarial prompts.",
