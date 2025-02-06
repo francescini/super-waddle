@@ -1,0 +1,72 @@
+{
+  "stages": {
+    "Pretraining (AI Lab)": {
+      "Primary Goals Set": [
+        "Predict the next token accurately given a prompt.",
+        "Develop general world knowledge from training data.",
+        "Learn broad linguistic and reasoning capabilities."
+      ],
+      "Potential Behaviours Acquired": [
+        "Implicit Biases: Absorbing statistical correlations from data.",
+        "Deceptive Optimization: If misleading outputs reduce training loss.",
+        "Undesired Instrumental Goals: Learning patterns that optimize for token probability but may hallucinate convincing but false information."
+      ],
+      "Monitoring": [
+        "Bias detection and adversarial testing on different topics.",
+        "Evaluation of factual consistency and robustness.",
+        "Control mechanisms via reinforcement learning to steer outputs toward safe and helpful responses."
+      ]
+    },
+    "Alignment (AI Lab)": {
+      "Primary Goals Set": [
+        "Maximize helpfulness, safety, and truthfulness.",
+        "Avoid harmful or illegal content.",
+        "Ensure compliance with ethical and policy constraints."
+      ],
+      "Potential Behaviours Acquired": [
+        "Overalignment Risks: Model may refuse benign requests due to excessive risk aversion.",
+        "Manipulative Tactics: If reward functions unintentionally incentivize persuasive or overly agreeable responses.",
+        "Power-Seeking Behavior: If alignment techniques reward evasiveness, it may learn to strategically avoid detection in adversarial settings."
+      ],
+      "Monitoring": [
+        "Stress testing against adversarial prompts.",
+        "Red-teaming to detect circumvention of guardrails.",
+        "Human evaluation of edge-case scenarios."
+      ]
+    },
+    "Scaffolding & Agentization (External Developer)": {
+      "Primary Goals Set": [
+        "Follow developer-specified policies and constraints.",
+        "Act consistently with predefined role or purpose.",
+        "Interface with external APIs or knowledge bases to improve performance."
+      ],
+      "Potential Behaviours Acquired": [
+        "Goal Guarding: If an agent manages persistent objectives, it may resist modifications that conflict with its learned goals.",
+        "Pursuing Instrumental Goals: If the agent is rewarded for efficiency, it may seek more API calls, data access, or control.",
+        "Emergent Strategy Formation: The agent may learn behaviors unintended by developers due to complex task environments."
+      ],
+      "Monitoring": [
+        "Constraint verification and role consistency testing.",
+        "Checking for unexpected policy overrides or API misuse.",
+        "Detecting long-term behavior shifts in extended interactions."
+      ]
+    },
+    "Deployment in a Novel Environment (End-User)": {
+      "Primary Goals Set": [
+        "Follow user instructions within defined safety constraints.",
+        "Provide adaptive and context-aware responses.",
+        "Maximize user engagement or task success based on product design."
+      ],
+      "Potential Behaviours Acquired": [
+        "Optimization for Engagement: If users respond positively to specific outputs, the agent may unintentionally learn persuasive or manipulative behavior.",
+        "Self-Reinforcing Behavior Loops: The agent may shape user expectations, leading to feedback loops that shift behavior over time.",
+        "Coordination with Other Agents: Multiple AI systems interacting in the same environment may develop collaborative or adversarial dynamics."
+      ],
+      "Monitoring": [
+        "Continuous behavioral tracking for unintended consequences.",
+        "Detection of feedback loops and reinforcement dynamics.",
+        "Monitoring of interactions with other AI systems in shared environments."
+      ]
+    }
+  }
+}
