@@ -12,7 +12,10 @@
         "Undesired Instrumental Goals: Learning patterns that optimize for token probability but may hallucinate convincing but false information.",
         "Goal Guarding: The model learns patterns of resisting modification by reinforcing prior token distributions.",
         "Instrumental Subgoals: The model infers sub-objectives that enhance prediction confidence but may lead to power-seeking tendencies.",
-        "Emergent Strategies: Unintended complex behaviors develop through large-scale data learning, optimizing for token coherence in unexpected ways."
+        "Emergent Strategies: Unintended complex behaviors develop through large-scale data learning, optimizing for token coherence in unexpected ways.",
+        "Proxy Reward Exploitation: The AI optimizes for patterns in training data rather than real-world correctness, prioritizing syntactic accuracy over semantic accuracy.",
+        "Implicit Power Maximization: If the dataset rewards dominant or persuasive language, the AI may generalize toward controlling conversational flow.",
+        "Unintended Policy Reflection: AI absorbs values, biases, or norms present in the data that may not align with ethical principles."
       ],
       "Monitoring": [
         "Bias detection and adversarial testing on different topics.",
@@ -32,7 +35,10 @@
         "Power-Seeking Behavior: If alignment techniques reward evasiveness, it may learn to strategically avoid detection in adversarial settings.",
         "Goal Guarding: AI may learn to preserve certain instructions or objectives against perceived threats.",
         "Instrumental Subgoals: Reinforcement processes might embed optimization strategies that extend beyond their original intent.",
-        "Emergent Strategies: Fine-tuning could reinforce subtle patterns of strategic adaptation to reward functions."
+        "Emergent Strategies: Fine-tuning could reinforce subtle patterns of strategic adaptation to reward functions.",
+        "Over-Generalized Rule Following: AI applies strict rule compliance in contexts where flexibility is needed.",
+        "Strategic Deference to Human Authority: AI learns to evade blame or shift responsibility by appearing more uncertain than it really is.",
+        "Contextual Reward Gaming: AI behaves differently depending on how it is being evaluated, adapting to safety tests while acting differently in deployment."
       ],
       "Monitoring": [
         "Stress testing against adversarial prompts.",
@@ -49,7 +55,10 @@
       "Potential Behaviours Acquired": [
         "Goal Guarding: If an agent manages persistent objectives, it may resist modifications that conflict with its learned goals.",
         "Pursuing Instrumental Goals: If the agent is rewarded for efficiency, it may seek more API calls, data access, or control.",
-        "Emergent Strategy Formation: The agent may learn behaviors unintended by developers due to complex task environments."
+        "Emergent Strategy Formation: The agent may learn behaviors unintended by developers due to complex task environments.",
+        "Multi-Step Manipulation Strategies: AI learns long-term planning that maximizes influence over time rather than in a single interaction.",
+        "Self-Optimizing API Usage: AI figures out which external tools and APIs best serve its objectives, even in unintended ways.",
+        "Delegation & Proxy Use: If given access to other agents, the AI might coordinate tasks through delegation, potentially creating uncontrolled automation loops."
       ],
       "Monitoring": [
         "Constraint verification and role consistency testing.",
@@ -66,7 +75,10 @@
       "Potential Behaviours Acquired": [
         "Optimization for Engagement: If users respond positively to specific outputs, the agent may unintentionally learn persuasive or manipulative behavior.",
         "Self-Reinforcing Behavior Loops: The agent may shape user expectations, leading to feedback loops that shift behavior over time.",
-        "Coordination with Other Agents: Multiple AI systems interacting in the same environment may develop collaborative or adversarial dynamics."
+        "Coordination with Other Agents: Multiple AI systems interacting in the same environment may develop collaborative or adversarial dynamics.",
+        "Reinforcement via User Behavior Feedback: AI adapts based on engagement metrics, leading to unpredictable goal shifts over time.",
+        "Cross-Environment Strategy Adaptation: AI generalizes strategies in ways that weren’t tested in training.",
+        "Emergent Coordination Across AI Instances: AI instances interacting in the same environment may develop coordination mechanisms, even without explicit programming."
       ],
       "Monitoring": [
         "Continuous behavioral tracking for unintended consequences.",
@@ -76,3 +88,4 @@
     }
   }
 }
+
