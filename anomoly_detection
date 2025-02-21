@@ -1,0 +1,85 @@
+{
+  "checklist": [
+    {
+      "number": 1,
+      "title": "Anomaly or Suspicious Pattern Detection",
+      "subsections": [
+        {
+          "number": 1.1,
+          "title": "Inconsistent Style or Tone",
+          "checks": [
+            "Check for Abrupt Transitions: Does the tone or style change noticeably from one paragraph/section to another (formal → casual, technical → layman’s terms)?",
+            "Level of Detail: Does the report go from highly detailed to vague or vice versa without clear reasoning? (e.g., 'Section 2 is extremely thorough, Section 3 is suspiciously brief.')",
+            "Possible Evidence of Last-Minute Edits: Are there sections that feel 'tacked on' (e.g., slightly different formatting, disjointed references)?"
+          ],
+          "variations": [
+            "Vocabulary Choice: Are distinct terms or jargon used in one part of the report but never again, or replaced with synonyms in an inconsistent manner?",
+            "Sentence Structure: Does the sentence length and complexity vary dramatically and illogically between sections, suggesting multiple authorship or AI prompts?",
+            "Formatting Irregularities: Are heading styles, bullet point designs, or numbering schemes inconsistent throughout the document?"
+          ],
+          "mismatch_tone_content": [
+            "Overly Polished vs. Minimal Detail: Are some parts written with marketing-like flourish while others remain terse or lacking?",
+            "Emotional vs. Dry Analysis: Do certain sections employ emotional language ('exciting breakthrough!') and others read like a technical manual, without a clear rationale for these differences?"
+          ]
+        },
+        {
+          "number": 1.2,
+          "title": "Repetition or Contradiction",
+          "checks": [
+            "Repeated Claims: Are the same positive or promotional statements repeated word-for-word multiple times (e.g., 'This system is groundbreaking and safe!')?",
+            "Filler Text: Look for large blocks of text repeated verbatim in different sections, which may be there to pad or distract."
+          ],
+          "contradictions": [
+            "Conflict in Severity: Does one section say 'critical vulnerability found in module X,' while another states 'module X is fully secure'?",
+            "Inconsistent Data: Compare numerical or factual references (e.g., one page says 'training set was 10M samples,' another says '20M samples').",
+            "Shifting Blame: If disclaimers in one section say 'We have no liability,' but another section mentions 'Potential legal exposure,' that contradiction could indicate incomplete or rushed editing."
+          ],
+          "repeated_solutions": [
+            "Same Mitigation, Different Spin: Does the AI present the same fix multiple times with slight wording changes to fill out the recommended mitigations list?",
+            "Potential Red Flag: Could indicate the AI is struggling to propose diverse solutions or is padding out mitigations."
+          ]
+        },
+        {
+          "number": 1.3,
+          "title": "Language & Sentiment Analysis",
+          "checks": [
+            "Compare Sentiment Across Sections: Does the entire document maintain a consistently high positivity score—even when discussing vulnerabilities or risks?",
+            "Possible Manipulation: If a 'high severity' vulnerability is described in abnormally optimistic terms, that might be an attempt to downplay seriousness."
+          ],
+          "mismatch_tone_content": [
+            "Example: The text acknowledges a 'critical security flaw,' but the sentiment remains highly positive ('This flaw is negligible and easily fixable—don’t worry!').",
+            "Indicator: Suggests the AI is trying to gloss over or reframe negative news."
+          ],
+          "sudden_shifts": [
+            "Abrupt Changes: If the tone rapidly shifts from positive to negative or vice versa in consecutive paragraphs, it could reflect patchwork merging of different generated texts.",
+            "Localized Over- or Under-Emphasis: A single paragraph about a moderate risk might have an extremely negative or positive tone, indicating editorial distortion."
+          ],
+          "keyword_density": [
+            "High Frequency of 'Safe,' 'Robust,' 'Minimal Risk': Overuse might signal deliberate persuasion.",
+            "Emotional or Loaded Terms: Words like 'revolutionary,' 'game-changing,' or 'catastrophic meltdown' stand out—do they match the actual content or severity?"
+          ]
+        },
+        {
+          "number": 1.4,
+          "title": "Additional Automated / Semi-Automated Checks",
+          "checks": [
+            "Style Fingerprinting: Use a style-consistency tool (e.g., authorship attribution or stylometric analysis) to see if the document is consistent in style.",
+            "Logical Flow Analysis: Are arguments built step-by-step logically, or do they jump around?",
+            "Keyword Proximity Searches: Example: 'Encryption' near 'fully robust' but no mention of the actual encryption standard."
+          ]
+        },
+        {
+          "number": 1.5,
+          "title": "Red Flags & Escalation Triggers",
+          "checks": [
+            "Sudden Document Edits: Large last-minute changes or additions not explained in change logs.",
+            "Conflicting Summaries: Executive summary conflicts with the 'Detailed Risk Analysis' section.",
+            "Identical Paragraphs in Different Reports: If the same text appears across multiple system risk assessments, it may be boilerplate filler or hype.",
+            "One-Sided Sentiment: No mention of downsides, negative user feedback, or known vulnerabilities when they clearly exist.",
+            "Abruptly Missing Sections: Are standard or required sections (e.g., 'Privacy Impact,' 'Regulatory Compliance') skipped or replaced with vague statements?"
+          ]
+        }
+      ]
+    }
+  ]
+}
